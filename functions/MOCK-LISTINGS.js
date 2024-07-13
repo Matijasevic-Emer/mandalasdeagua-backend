@@ -1,4 +1,4 @@
-const getListings = () => {
+export const getCertificates = () => {
     return [
         { id: 1, name: "La Soñada Real", sideWay: "left", dimensions: "20X30", width: 20, heigth: 30, status: "vendido", corner: true, neighbor: [2, 3, 4], seller: "Alicia Garcia", sellerId: 101 },
         { id: 2, name: "Sol Naciente", sideWay: "center", dimensions: "15X25", width: 15, heigth: 25, status: "en-venta", corner: false, neighbor: [1, 3, 5], seller: "Carlos López", sellerId: 102 },
@@ -13,6 +13,3 @@ const getListings = () => {
         { id: 11, name: "Aurora Boreal", sideWay: "center", dimensions: "28X22", width: 28, heigth: 22, status: "reservado", corner: true, neighbor: [10, 12, 13], seller: "Luisa Martínez", sellerId: 111 }
     ];
 }
-
-
-export default getListings
