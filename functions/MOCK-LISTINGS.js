@@ -1,7 +1,8 @@
 export const getListings = () => {
+    const imgSrc = new URL("./media/aereo-dia-1.jpg", import.meta.url).href;
     return [
-        { id: 1, name: "La Soñada Real", sideWay: "left", dimensions: "20X30", width: 20, heigth: 30, status: "vendido", corner: true, neighbor: [2, 3, 4], seller: "Alicia Garcia", sellerId: 101, gallery: [URL("./media/aereo-dia-1.jpg")] },
-        { id: 2, name: "Sol Naciente", sideWay: "center", dimensions: "15X25", width: 15, heigth: 25, status: "en-venta", corner: false, neighbor: [1, 3, 5], seller: "Carlos López", sellerId: 102, gallery: [URL("./media/camino-noche-12.jpg")] },
+        { id: 1, name: "La Soñada Real", sideWay: "left", dimensions: "20X30", width: 20, heigth: 30, status: "vendido", corner: true, neighbor: [2, 3, 4], seller: "Alicia Garcia", sellerId: 101, gallery: [] },
+        { id: 2, name: "Sol Naciente", sideWay: "center", dimensions: "15X25", width: 15, heigth: 25, status: "en-venta", corner: false, neighbor: [1, 3, 5], seller: "Carlos López", sellerId: 102, gallery: ["./media/camino-noche-12.jpg"] },
         { id: 3, name: "Brisa Marina", sideWay: "right", dimensions: "18X22", width: 18, heigth: 22, status: "en-venta", corner: true, neighbor: [1, 2, 4], seller: "María Rodríguez", sellerId: 103, gallery: [] },
         { id: 4, name: "Luna Llena", sideWay: "left", dimensions: "10X40", width: 10, heigth: 40, status: "reservado", corner: false, neighbor: [1, 3, 5], seller: "Juan Martínez", sellerId: 104, gallery: [] },
         { id: 5, name: "Monte Azul", sideWay: "center", dimensions: "30X30", width: 30, heigth: 30, status: "en-venta", corner: true, neighbor: [2, 4, 6], seller: "Ana González", sellerId: 105, gallery: [] },
