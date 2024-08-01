@@ -1,6 +1,4 @@
 export const getListings = () => {
-    const imgSrc1 = new URL("./media/aereo-dia-1.jpg", import.meta.url).pathname
-
     return [
         { id: 1, name: "La Soñada Real", sideWay: "left", dimensions: "20X30", width: 20, heigth: 30, status: "vendido", corner: true, neighbor: [2, 3, 4], seller: "Alicia Garcia", sellerId: 101, coverPhoto: "https://i.imgur.com/mcwZnGx.jpeg" },
         { id: 2, name: "Sol Naciente", sideWay: "center", dimensions: "15X25", width: 15, heigth: 25, status: "en-venta", corner: false, neighbor: [1, 3, 5], seller: "Carlos López", sellerId: 102, coverPhoto: "https://i.imgur.com/mcwZnGx.jpeg" },
