@@ -9,7 +9,7 @@ export const getListings = () => {
         { id: 7, name: "Bosque Encantado", sideWay: "left", dimensions: "25X35", width: 25, heigth: 35, status: "reservado", corner: true, neighbor: [6, 8, 9], seller: "Laura Fernández", sellerId: 107, coverPhoto: "https://i.imgur.com/KGlgs23.jpeg" },
         { id: 8, name: "Amanecer Dorado", sideWay: "center", dimensions: "20X20", width: 20, heigth: 20, status: "en-venta", corner: false, neighbor: [6, 7, 9], seller: "Diego Pérez", sellerId: 108, coverPhoto: "https://i.imgur.com/uzio2BE.jpeg" },
         { id: 9, name: "Valle Sereno", sideWay: "right", dimensions: "15X25", width: 15, heigth: 25, status: "vendido", corner: true, neighbor: [7, 8, 10], seller: "Sofía Gómez", sellerId: 109, coverPhoto: "https://i.imgur.com/mcwZnGx.jpeg" },
-        { id: 10, name: "Sueño Real", sideWay: "left", dimensions: "22X18", width: 22, heigth: 18, status: "en-venta", corner: false, neighbor: [9, 11, 12], seller: "Manuel Díaz", sellerId: 110, coverPhoto: "https://i.imgur.com/mcwZnGx.jpeg" },
-        { id: 11, name: "Aurora Boreal", sideWay: "center", dimensions: "28X22", width: 28, heigth: 22, status: "reservado", corner: true, neighbor: [10, 12, 13], seller: "Luisa Martínez", sellerId: 111, coverPhoto: "https://i.imgur.com/mcwZnGx.jpeg" }
+        { id: 10, name: "Sueño Real", sideWay: "left", dimensions: "22X18", width: 22, heigth: 18, status: "en-venta", corner: false, neighbor: [9, 11, 12], seller: "Manuel Díaz", sellerId: 110, coverPhoto: "https://i.imgur.com/vhSjTer.jpeg" },
+        { id: 11, name: "Aurora Boreal", sideWay: "center", dimensions: "28X22", width: 28, heigth: 22, status: "reservado", corner: true, neighbor: [10, 12, 13], seller: "Luisa Martínez", sellerId: 111, coverPhoto: "https://i.imgur.com/ImyOyiz.jpeg" }
     ];
 }
