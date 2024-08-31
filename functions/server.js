@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import serverless from "serverless-http";
 import { getCertificates } from "./MOCK-CERTIFICATES.js";
-import { getListings, getListingById } from "./MOCK-LISTINGS.js";
+import { getListings, getListingById, getListingCompare } from "./MOCK-LISTINGS.js";
 
 const app = express();
 app.use(cors());
