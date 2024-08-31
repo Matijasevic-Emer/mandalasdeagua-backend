@@ -31,6 +31,19 @@ router.get("/listings", (req, res) => {
   }
 });
 
+
+router.get("/compare", (req, res) => {
+  const ids = req.query.ids;
+
+  // Convierte `ids` a un array de números
+  const idsArray = ids ? ids.split(',').map(Number) : [];
+
+  // Obtiene los listings que coinciden con los IDs pasados
+  const listingsToCompare = getListingCompare(idsArray);
+
+  res.json(listingsToCompare);
+});
+
 // Iniciar servidor en el contexto de Netlify Functions
 app.use('/.netlify/functions/server', router);
 

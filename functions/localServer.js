@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 import { getCertificates } from "./MOCK-CERTIFICATES.js";
-import { getListings, getListingById } from "./MOCK-LISTINGS.js";
+import { getListings, getListingById, getListingCompare } from "./MOCK-LISTINGS.js";
 
 const app = express();
 app.use(cors());
@@ -31,6 +31,19 @@ router.get("/listings", (req, res) => {
         res.json(listings);
     }
 });
+
+router.get("/compare", (req, res) => {
+    const ids = req.query.ids;
+
+    // Convierte `ids` a un array de números
+    const idsArray = ids ? ids.split(',').map(Number) : [];
+
+    // Obtiene los listings que coinciden con los IDs pasados
+    const listingsToCompare = getListingCompare(idsArray);
+
+    res.json(listingsToCompare);
+});
+
 
 // Iniciar servidor localmente
 app.use("/api", router);
